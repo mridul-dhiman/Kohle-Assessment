@@ -7,7 +7,7 @@
     android:layout_height="wrap_content"
     android:background="@drawable/bs_bkg"
     app:behavior_hideable="true"
-    app:behavior_peekHeight="?attr/actionBarSize"
+    app:behavior_skipCollapsed="true"
     app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -17,9 +17,7 @@
         android:background="?attr/colorAccent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textViewQuestion"

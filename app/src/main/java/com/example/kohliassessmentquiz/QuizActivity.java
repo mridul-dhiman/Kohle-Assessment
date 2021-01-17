@@ -89,6 +89,8 @@ public class QuizActivity extends AppCompatActivity implements QuestionListAdapt
             }
         });
 
+        findViewById(R.id.constraintLayoutBottomSheetHeader).setOnClickListener(v -> bottomSheetBehavior.setState(BottomSheetBehavior.STATE_HIDDEN));
+
         floatingActionButton.setOnClickListener(v -> {
             MaterialAlertDialogBuilder builder = new MaterialAlertDialogBuilder(this);
             builder.setTitle("Confirm Submission");

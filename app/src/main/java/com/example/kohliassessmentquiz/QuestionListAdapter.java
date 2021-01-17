@@ -77,7 +77,7 @@ public class QuestionListAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
                 }
             }
         } else {
-            String q = position + ". " + questionsArrayList.get(position).getQuestion();
+            String q = position + 1 + ". " + questionsArrayList.get(position).getQuestion();
             ((ResultViewHolder) holder).question.setText(q);
 
             if (responseList.get(position) == null) {
