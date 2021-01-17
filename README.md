@@ -3,4 +3,4 @@
 
 [Apk](https://github.com/mridul-dhiman/Kohli-Assessment/blob/master/app/release/app-release.apk)
 
-[ApkBundle](https://github.com/mridul-dhiman/Kohli-Assessment/blob/master/app/release/app-release.aab)
+[App Bundle](https://github.com/mridul-dhiman/Kohli-Assessment/blob/master/app/release/app-release.aab)
