@@ -61,7 +61,8 @@ public class QuestionListAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
         int viewType = getItemViewType(position);
         if (viewType == QUESTION_TYPE) {
-            ((QuestionViewHolder) holder).question.setText(questionsArrayList.get(position).getQuestion());
+            String q = position + 1 + ". " + questionsArrayList.get(position).getQuestion();
+            ((QuestionViewHolder) holder).question.setText(q);
 
             if (answeredList != null && answeredList.get(position) != null) {
                 if (answeredList.get(position) == ANSWERED_CORRECTLY) {
@@ -76,7 +77,8 @@ public class QuestionListAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
                 }
             }
         } else {
-            ((ResultViewHolder) holder).question.setText(questionsArrayList.get(position).getQuestion());
+            String q = position + ". " + questionsArrayList.get(position).getQuestion();
+            ((ResultViewHolder) holder).question.setText(q);
 
             if (responseList.get(position) == null) {
                 ((ResultViewHolder) holder).UAnswer.setText(holder.itemView.getResources().getString(R.string.not_answered));

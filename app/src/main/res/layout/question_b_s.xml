@@ -5,7 +5,7 @@
     android:id="@+id/questionBottomSheet"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@android:color/white"
+    android:background="@drawable/bs_bkg"
     app:behavior_hideable="true"
     app:behavior_peekHeight="?attr/actionBarSize"
     app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
@@ -73,6 +73,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:backgroundTint="@color/uic"
         android:text="@string/submit"
         app:layout_constraintEnd_toEndOf="@+id/radioGroupAnswer"
         app:layout_constraintStart_toStartOf="@+id/radioGroupAnswer"
