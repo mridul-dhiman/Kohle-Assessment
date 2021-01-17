@@ -1,0 +1,70 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "436ae2098b98672db8cf63c56d3a81dc",
+    "entities": [
+      {
+        "tableName": "Questions",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER, `Question` TEXT, `Option1` TEXT, `Option2` TEXT, `Option3` TEXT, `Option4` TEXT, `Correct_Option` INTEGER NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "question",
+            "columnName": "Question",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "option1",
+            "columnName": "Option1",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "option2",
+            "columnName": "Option2",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "option3",
+            "columnName": "Option3",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "option4",
+            "columnName": "Option4",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "correct_option",
+            "columnName": "Correct_Option",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '436ae2098b98672db8cf63c56d3a81dc')"
+    ]
+  }
+}
